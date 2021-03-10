@@ -33,10 +33,10 @@ allprojects {
    
 - 使用
 
-  //加密
+  //封装
    byte[]  enCoder=TlvDataWarp.tlvPackData(String srcdata);
     
-  //解密
+  //解封装
     byte[] decoder = TlvDataWarp.tlvUnpackData(byte[] encodeData);
     
   
