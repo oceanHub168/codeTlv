@@ -29,7 +29,7 @@ allprojects {
 ```
 
 - 在项目中引用 
-> api 'com.hub168.yh:CoderTlv-android:0.0.1@aar'
+> api 'com.hub168.yh:CoderTlv-android:1.0.0@aar'
    
 - 使用
 
