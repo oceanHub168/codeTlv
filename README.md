@@ -14,7 +14,7 @@ oxFD | ox1E | 5(Tlv最小的长度)+值得长度 | 值 | crc1+crc2(2个字节)
 比如蓝牙、wifi、NFC之间的数据传递,要求数据的安全和一致性
 
 
-# 用法(只限于android arm64-v8a)
+# 用法(只限于android arm64-v8a,只编译此架构的so库)
 
 - 在项目(最外层)的build.gradle 下面添加仓库地址 
 
