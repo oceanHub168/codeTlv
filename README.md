@@ -16,7 +16,7 @@ oxFD | ox1E | 5(Tlv最小的长度)+值得长度 | 值 | crc1+crc2(2个字节)
 
 # 用法(只限于android arm64-v8a)
 
-- 在项目的build.gradle 下面添加仓库地址 
+- 在项目(最外层)的build.gradle 下面添加仓库地址 
 
 ```
 allprojects {
@@ -27,7 +27,6 @@ allprojects {
     }
 }
 ```
-
 - 在项目中引用 
 > api 'com.hub168.yh:CoderTlv-android:1.0.0@aar'
    
