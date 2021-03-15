@@ -32,10 +32,26 @@ allprojects {
    
 - 使用
 
-  //封装
-   byte[]  enCoder=TlvDataWarp.tlvPackData(String srcdata);
-    
-  //解封装
-    byte[] decoder = TlvDataWarp.tlvUnpackData(byte[] encodeData);
-    
+public class TlvDataWarp {
+
+    static {
+        System.loadLibrary("tlvpack");
+    }
+
+    /**
+     * 文本tlv格式封装
+     * @param srcData  要封装的文本
+     * @return
+     */
+    public static native byte[] tlvPackData(String srcData);
+
+    /**
+     * 解封装
+     * @param packData  封装过的tlv格式文本
+     * @return
+     */
+    public static native byte[] tlvUnpackData(byte[] packData);
+
+}
+
   
